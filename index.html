@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora contratos graduación Diciembre 2017</title>
+    <!-- javascript code -->
+    <script src="js/master.js"></script>
+    <!--  css code -->
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body onload="onLoad()">
+    <h1>Calculadora de Contratos- Graduación Diciembre 2017</h1>
+
+    <div class="general">
+    <hr>
+    <p>
+      Graduados:<input type="text" id="grad"></td>
+    </p>
+    <p>
+     Viaje:
+      <input type="radio"  id="travel" name="travel" value="1" onclick="travelop()"/>Si
+      <input type="radio"  id="travel" name="travel" value="2"  checked="checked" />No
+      <div class="travelop">
+        <p>
+          Distribuir el precio del viaje con tus invitados?
+          <input type="radio"  id="inv_travel" name="inv_travel" value="1"/>Si
+          <input type="radio"  id="inv_travel" name="inv_travel" value="2"/>No
+        </p>
+       </div>
+    </p>
+    <p>
+      Invitados: <input type="text" id="inv">
+    </p>
+    <p>
+      Niños: <input type="text" id="kid">
+    </p>
+    <button type="button" name="button" onclick="calcular()">Calcular </button>
+    <div class="results">
+      <table>
+        <tr>
+          <th>Concepto</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <th>Graduados:</th>
+          <td id="Tgrad"></td>
+        </tr>
+        <tr>
+          <th>Diferencia del Viaje:</th>
+          <td id="Ttravel"></td>
+        </tr>
+        <tr>
+          <th>Invitados:</th>
+          <td id="Tinv"></td>
+        </tr>
+        <tr>
+          <th>Niños:</th>
+          <td id="Tkid"></td>
+        </tr>
+      </table>
+      <hr>
+      <table>
+          <tr>
+          <th >Total a pagar:</th>
+          <td id="total"></td>
+        </tr>
+      </table>
+
+  </div>
+  </body>
+</html>
